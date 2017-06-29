@@ -63,10 +63,9 @@
 
 - (UITableView *)hourTableView{
     if (_hourTableView == nil) {
-        _hourTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _hourTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:UITableViewStylePlain];
         _hourTableView.contentInset = UIEdgeInsetsMake(self.frame.size.height / 2, 0, self.frame.size.height / 2, 0);
         _hourTableView.showsVerticalScrollIndicator = NO;
-        _hourTableView.rowHeight = self.rowHeight;
         _hourTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _hourTableView.delegate = self;
         _hourTableView.dataSource = self;
@@ -78,11 +77,10 @@
 
 - (UITableView *)minuteTableView{
     if (_minuteTableView == nil) {
-        _minuteTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _minuteTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:UITableViewStylePlain];
         _minuteTableView.contentInset = UIEdgeInsetsMake(self.frame.size.height / 2, 0, self.frame.size.height / 2, 0);
         _minuteTableView.showsVerticalScrollIndicator = NO;
         _minuteTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _minuteTableView.rowHeight = self.rowHeight;
         _minuteTableView.delegate = self;
         _minuteTableView.dataSource = self;
         [_minuteTableView registerClass:[RWTimeCell class] forCellReuseIdentifier:NSStringFromClass([RWTimeCell class])];
@@ -93,17 +91,30 @@
 
 - (UITableView *)amPmTableView{
     if (_amPmTableView == nil) {
-        _amPmTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _amPmTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:UITableViewStylePlain];
         _amPmTableView.contentInset = UIEdgeInsetsMake(self.frame.size.height/2, 0, self.frame.size.height/2, 0);
         _amPmTableView.showsVerticalScrollIndicator = NO;
         _amPmTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _amPmTableView.delegate = self;
         _amPmTableView.dataSource = self;
-        _amPmTableView.rowHeight = self.rowHeight;
         [_amPmTableView registerClass:[RWTimeCell class] forCellReuseIdentifier:NSStringFromClass([RWTimeCell class])];
         _amPmTableView.backgroundColor = [UIColor clearColor];
     }
     return _amPmTableView;
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    if (self.is12HourFormat) {
+        CGFloat width = self.frame.size.width/3;
+        self.hourTableView.frame = CGRectMake(0, 0, width, self.frame.size.height);
+        self.minuteTableView.frame = CGRectMake(width, 0, width, self.frame.size.height);
+        self.amPmTableView.frame = CGRectMake(2*width, 0, width, self.frame.size.height);
+    }else{
+        CGFloat width = self.frame.size.width/2;
+        self.hourTableView.frame = CGRectMake(0, 0, width, self.frame.size.height);
+        self.minuteTableView.frame = CGRectMake(width, 0, width, self.frame.size.height);
+    }
 }
 
 - (void)updateWithHour:(NSInteger)hour minute:(NSInteger)minute{
@@ -114,27 +125,14 @@
 - (void)setupSubview{
     [self addSubview:self.hourTableView];
     [self addSubview:self.minuteTableView];
-    //hour table view
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.hourTableView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0]];
-    
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.hourTableView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0]];
-
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.hourTableView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
-
-    //minute table view
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.minuteTableView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:0]];
-    
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.minuteTableView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.minuteTableView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.hourTableView attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0]];
-    
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.minuteTableView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.hourTableView attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
-    
     
     if (self.is12HourFormat) {
         [self addSubview:self.amPmTableView];
-    }else{
-    
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return self.rowHeight;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -226,7 +224,7 @@
 {
     UITableView *tableView = (UITableView *)scrollView;
     CGPoint relativeOffset = CGPointMake(0, tableView.contentOffset.y + tableView.contentInset.top );
-    NSInteger row = round(relativeOffset.y / tableView.rowHeight);
+    NSInteger row = round(relativeOffset.y / self.rowHeight);
     if (tableView == _amPmTableView && row > 1){
         row = 1;
     }
