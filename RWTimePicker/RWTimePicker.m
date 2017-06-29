@@ -120,6 +120,14 @@
 - (void)updateWithHour:(NSInteger)hour minute:(NSInteger)minute{
     self.hour = hour;
     self.minute = minute;
+    {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.hour inSection:0];
+        [self.hourTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    }
+    {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.minute inSection:0];
+        [self.minuteTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    }
 }
 
 - (void)setupSubview{
@@ -132,6 +140,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (self.rowHeight <= 0) {
+        self.rowHeight = 50;
+    }
     return self.rowHeight;
 }
 

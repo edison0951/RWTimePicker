@@ -26,4 +26,6 @@ typedef void(^CompleteHandler)(NSInteger hour, NSInteger minute);
 @property(nonatomic, strong) CompleteHandler completeHandler;
 
 - (instancetype)initWithFrame:(CGRect)frame is12HourFormat:(BOOL)is12HourFormat;
+
+- (void)updateWithHour:(NSInteger)hour minute:(NSInteger)minute;
 @end

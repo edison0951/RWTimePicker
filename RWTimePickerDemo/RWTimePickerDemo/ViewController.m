@@ -27,6 +27,7 @@
     [self.view addSubview:imageView];
     RWTimePicker *timePicker = [[RWTimePicker alloc] initWithFrame:CGRectMake(43, 43, 290, 150) is12HourFormat:YES];
     timePicker.rowHeight = 50;
+    [timePicker updateWithHour:8 minute:30];
     [self.view addSubview:timePicker];
     timePicker.completeHandler = ^(NSInteger hour, NSInteger minute){
     
