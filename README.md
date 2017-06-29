@@ -15,4 +15,4 @@ timePicker.rowHeight = 50;
 
 操作效果如下所示：
 
-![https://github.com/edison0951/RWTimePicker/blob/master/operation.gif]()
+![operation](https://github.com/edison0951/RWTimePicker/blob/master/operation.gif)
