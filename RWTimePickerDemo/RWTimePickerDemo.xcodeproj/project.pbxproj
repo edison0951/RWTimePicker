@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2A1AB5C1F0494960023D3ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB5B1F0494960023D3ED /* main.m */; };
+		F2A1AB5F1F0494960023D3ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB5E1F0494960023D3ED /* AppDelegate.m */; };
+		F2A1AB621F0494960023D3ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB611F0494960023D3ED /* ViewController.m */; };
+		F2A1AB651F0494960023D3ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A1AB631F0494960023D3ED /* Main.storyboard */; };
+		F2A1AB671F0494960023D3ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A1AB661F0494960023D3ED /* Assets.xcassets */; };
+		F2A1AB6A1F0494960023D3ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A1AB681F0494960023D3ED /* LaunchScreen.storyboard */; };
+		F2A1AB751F0494970023D3ED /* RWTimePickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB741F0494970023D3ED /* RWTimePickerDemoTests.m */; };
+		F2A1AB801F0494970023D3ED /* RWTimePickerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB7F1F0494970023D3ED /* RWTimePickerDemoUITests.m */; };
+		F2A1AB931F0496B30023D3ED /* RWTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB921F0496B30023D3ED /* RWTimePicker.m */; };
+		F2A1AB941F0496B30023D3ED /* RWTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB921F0496B30023D3ED /* RWTimePicker.m */; };
+		F2A1AB951F0496B30023D3ED /* RWTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1AB921F0496B30023D3ED /* RWTimePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2A1AB711F0494970023D3ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A1AB4F1F0494960023D3ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A1AB561F0494960023D3ED;
+			remoteInfo = RWTimePickerDemo;
+		};
+		F2A1AB7C1F0494970023D3ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A1AB4F1F0494960023D3ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A1AB561F0494960023D3ED;
+			remoteInfo = RWTimePickerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2A1AB571F0494960023D3ED /* RWTimePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWTimePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A1AB5B1F0494960023D3ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2A1AB5D1F0494960023D3ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2A1AB5E1F0494960023D3ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2A1AB601F0494960023D3ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2A1AB611F0494960023D3ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2A1AB641F0494960023D3ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2A1AB661F0494960023D3ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2A1AB691F0494960023D3ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2A1AB6B1F0494960023D3ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A1AB701F0494970023D3ED /* RWTimePickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWTimePickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A1AB741F0494970023D3ED /* RWTimePickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTimePickerDemoTests.m; sourceTree = "<group>"; };
+		F2A1AB761F0494970023D3ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A1AB7B1F0494970023D3ED /* RWTimePickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWTimePickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A1AB7F1F0494970023D3ED /* RWTimePickerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWTimePickerDemoUITests.m; sourceTree = "<group>"; };
+		F2A1AB811F0494970023D3ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A1AB911F0496B30023D3ED /* RWTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTimePicker.h; sourceTree = "<group>"; };
+		F2A1AB921F0496B30023D3ED /* RWTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTimePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2A1AB541F0494960023D3ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB6D1F0494970023D3ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB781F0494970023D3ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2A1AB4E1F0494960023D3ED = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB591F0494960023D3ED /* RWTimePickerDemo */,
+				F2A1AB731F0494970023D3ED /* RWTimePickerDemoTests */,
+				F2A1AB7E1F0494970023D3ED /* RWTimePickerDemoUITests */,
+				F2A1AB581F0494960023D3ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2A1AB581F0494960023D3ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB571F0494960023D3ED /* RWTimePickerDemo.app */,
+				F2A1AB701F0494970023D3ED /* RWTimePickerDemoTests.xctest */,
+				F2A1AB7B1F0494970023D3ED /* RWTimePickerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2A1AB591F0494960023D3ED /* RWTimePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB901F0496B30023D3ED /* RWTimePicker */,
+				F2A1AB5D1F0494960023D3ED /* AppDelegate.h */,
+				F2A1AB5E1F0494960023D3ED /* AppDelegate.m */,
+				F2A1AB601F0494960023D3ED /* ViewController.h */,
+				F2A1AB611F0494960023D3ED /* ViewController.m */,
+				F2A1AB631F0494960023D3ED /* Main.storyboard */,
+				F2A1AB661F0494960023D3ED /* Assets.xcassets */,
+				F2A1AB681F0494960023D3ED /* LaunchScreen.storyboard */,
+				F2A1AB6B1F0494960023D3ED /* Info.plist */,
+				F2A1AB5A1F0494960023D3ED /* Supporting Files */,
+			);
+			path = RWTimePickerDemo;
+			sourceTree = "<group>";
+		};
+		F2A1AB5A1F0494960023D3ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB5B1F0494960023D3ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2A1AB731F0494970023D3ED /* RWTimePickerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB741F0494970023D3ED /* RWTimePickerDemoTests.m */,
+				F2A1AB761F0494970023D3ED /* Info.plist */,
+			);
+			path = RWTimePickerDemoTests;
+			sourceTree = "<group>";
+		};
+		F2A1AB7E1F0494970023D3ED /* RWTimePickerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB7F1F0494970023D3ED /* RWTimePickerDemoUITests.m */,
+				F2A1AB811F0494970023D3ED /* Info.plist */,
+			);
+			path = RWTimePickerDemoUITests;
+			sourceTree = "<group>";
+		};
+		F2A1AB901F0496B30023D3ED /* RWTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1AB911F0496B30023D3ED /* RWTimePicker.h */,
+				F2A1AB921F0496B30023D3ED /* RWTimePicker.m */,
+			);
+			name = RWTimePicker;
+			path = ../../RWTimePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2A1AB561F0494960023D3ED /* RWTimePickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A1AB841F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemo" */;
+			buildPhases = (
+				F2A1AB531F0494960023D3ED /* Sources */,
+				F2A1AB541F0494960023D3ED /* Frameworks */,
+				F2A1AB551F0494960023D3ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RWTimePickerDemo;
+			productName = RWTimePickerDemo;
+			productReference = F2A1AB571F0494960023D3ED /* RWTimePickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2A1AB6F1F0494970023D3ED /* RWTimePickerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A1AB871F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemoTests" */;
+			buildPhases = (
+				F2A1AB6C1F0494970023D3ED /* Sources */,
+				F2A1AB6D1F0494970023D3ED /* Frameworks */,
+				F2A1AB6E1F0494970023D3ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A1AB721F0494970023D3ED /* PBXTargetDependency */,
+			);
+			name = RWTimePickerDemoTests;
+			productName = RWTimePickerDemoTests;
+			productReference = F2A1AB701F0494970023D3ED /* RWTimePickerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2A1AB7A1F0494970023D3ED /* RWTimePickerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2A1AB8A1F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemoUITests" */;
+			buildPhases = (
+				F2A1AB771F0494970023D3ED /* Sources */,
+				F2A1AB781F0494970023D3ED /* Frameworks */,
+				F2A1AB791F0494970023D3ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A1AB7D1F0494970023D3ED /* PBXTargetDependency */,
+			);
+			name = RWTimePickerDemoUITests;
+			productName = RWTimePickerDemoUITests;
+			productReference = F2A1AB7B1F0494970023D3ED /* RWTimePickerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2A1AB4F1F0494960023D3ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = riven;
+				TargetAttributes = {
+					F2A1AB561F0494960023D3ED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6NC222CATZ;
+						ProvisioningStyle = Automatic;
+					};
+					F2A1AB6F1F0494970023D3ED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6NC222CATZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2A1AB561F0494960023D3ED;
+					};
+					F2A1AB7A1F0494970023D3ED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6NC222CATZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F2A1AB561F0494960023D3ED;
+					};
+				};
+			};
+			buildConfigurationList = F2A1AB521F0494960023D3ED /* Build configuration list for PBXProject "RWTimePickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2A1AB4E1F0494960023D3ED;
+			productRefGroup = F2A1AB581F0494960023D3ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2A1AB561F0494960023D3ED /* RWTimePickerDemo */,
+				F2A1AB6F1F0494970023D3ED /* RWTimePickerDemoTests */,
+				F2A1AB7A1F0494970023D3ED /* RWTimePickerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2A1AB551F0494960023D3ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A1AB6A1F0494960023D3ED /* LaunchScreen.storyboard in Resources */,
+				F2A1AB671F0494960023D3ED /* Assets.xcassets in Resources */,
+				F2A1AB651F0494960023D3ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB6E1F0494970023D3ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB791F0494970023D3ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2A1AB531F0494960023D3ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A1AB621F0494960023D3ED /* ViewController.m in Sources */,
+				F2A1AB5F1F0494960023D3ED /* AppDelegate.m in Sources */,
+				F2A1AB5C1F0494960023D3ED /* main.m in Sources */,
+				F2A1AB931F0496B30023D3ED /* RWTimePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB6C1F0494970023D3ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A1AB751F0494970023D3ED /* RWTimePickerDemoTests.m in Sources */,
+				F2A1AB941F0496B30023D3ED /* RWTimePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A1AB771F0494970023D3ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A1AB801F0494970023D3ED /* RWTimePickerDemoUITests.m in Sources */,
+				F2A1AB951F0496B30023D3ED /* RWTimePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2A1AB721F0494970023D3ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A1AB561F0494960023D3ED /* RWTimePickerDemo */;
+			targetProxy = F2A1AB711F0494970023D3ED /* PBXContainerItemProxy */;
+		};
+		F2A1AB7D1F0494970023D3ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A1AB561F0494960023D3ED /* RWTimePickerDemo */;
+			targetProxy = F2A1AB7C1F0494970023D3ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2A1AB631F0494960023D3ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A1AB641F0494960023D3ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2A1AB681F0494960023D3ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2A1AB691F0494960023D3ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2A1AB821F0494970023D3ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2A1AB831F0494970023D3ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2A1AB851F0494970023D3ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2A1AB861F0494970023D3ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2A1AB881F0494970023D3ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWTimePickerDemo.app/RWTimePickerDemo";
+			};
+			name = Debug;
+		};
+		F2A1AB891F0494970023D3ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RWTimePickerDemo.app/RWTimePickerDemo";
+			};
+			name = Release;
+		};
+		F2A1AB8B1F0494970023D3ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RWTimePickerDemo;
+			};
+			name = Debug;
+		};
+		F2A1AB8C1F0494970023D3ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6NC222CATZ;
+				INFOPLIST_FILE = RWTimePickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.riven.RWTimePickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RWTimePickerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2A1AB521F0494960023D3ED /* Build configuration list for PBXProject "RWTimePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A1AB821F0494970023D3ED /* Debug */,
+				F2A1AB831F0494970023D3ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A1AB841F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A1AB851F0494970023D3ED /* Debug */,
+				F2A1AB861F0494970023D3ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A1AB871F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A1AB881F0494970023D3ED /* Debug */,
+				F2A1AB891F0494970023D3ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2A1AB8A1F0494970023D3ED /* Build configuration list for PBXNativeTarget "RWTimePickerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2A1AB8B1F0494970023D3ED /* Debug */,
+				F2A1AB8C1F0494970023D3ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2A1AB4F1F0494960023D3ED /* Project object */;
+}
